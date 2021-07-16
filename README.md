@@ -4,20 +4,20 @@ Estimation de la volatilité implicite à l'aide de la méthode Newton-Raphson (
 
 ---
 Le modèle Garman-Kohlhagen a pour entrées:
-option_type = "p" ou "c" (pour Call ou Put)
-fs = prix du sous-jacent
-x = strike
-t = échéance
-v = volatilité implicite
-r = taux sans risque
-q = paiement de dividendes
-b = coût de portage
+* option_type = "p" ou "c" (pour Call ou Put)
+* fs = prix du sous-jacent
+* x = strike
+* t = échéance
+* v = volatilité implicite
+* r = taux sans risque
+* q = paiement de dividendes
+* b = coût de portage
 
 ---
 Les sorties du modèle sont:
-value = prix de l'option
-delta = première dérivée du prix de l'option par rapport au prix du sous-jacent
-gamma = seconde dérivée du prix de l'option par rapport au prix du sous-jacent
-theta = première dérivée du prix de l'option par rapport au délai d'expiration
-vega = première dérivée du prix de l'option par rapport à la volatilité implicite
-rho = première dérivée du prix de l'option par rapport au taux sans risque
+* value = prix de l'option
+* delta = première dérivée du prix de l'option par rapport au prix du sous-jacent
+* gamma = seconde dérivée du prix de l'option par rapport au prix du sous-jacent
+* theta = première dérivée du prix de l'option par rapport au délai d'expiration
+* vega = première dérivée du prix de l'option par rapport à la volatilité implicite
+* rho = première dérivée du prix de l'option par rapport au taux sans risque
